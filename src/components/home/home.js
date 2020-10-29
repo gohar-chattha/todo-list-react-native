@@ -63,7 +63,7 @@ class Home extends React.Component {
                 onPress={()=> this.onSave()}
               />
 
-              {this.props.todo_listing.length>0?
+              {this.props.todo_listing && this.props.todo_listing.length>0?
                 <FlatList
                   style={styles.home.todosContainer}
                   extraData={this.state.refresh}

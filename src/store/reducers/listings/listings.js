@@ -1,6 +1,6 @@
 import * as TYPES from "../../types";
 const initialState = {
-  todo_listing: null,
+  todo_listing: [],
 };
 const reducer = (state = initialState, actions) => {
   switch (actions.type) {
